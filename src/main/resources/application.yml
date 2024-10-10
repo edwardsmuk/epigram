@@ -12,7 +12,7 @@ spring:
       database: epigram-service
   thymeleaf:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
-    prefix: classpath:/templates/    # Trailing / mandatory
+    prefix: classpath:/static/    # Trailing / mandatory
     # Template location for this application only
 springdoc:
   api-docs:
