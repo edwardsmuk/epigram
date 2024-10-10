@@ -1,0 +1,21 @@
+#spring.application.name=epigram
+# Configure this Epigram Server
+server:
+  port: ${PORT:8080}   # HTTP (Tomcat) port
+# Spring properties
+spring:
+  application:
+    name: epigram-service  #Name for this service
+  data:
+    mongodb:
+      uri: mongodb+srv://epigram_user:wREotIWaemjSUzYL@cluster0.d3vm8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: epigram-service
+  thymeleaf:
+    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+    prefix: classpath:/templates/    # Trailing / mandatory
+    # Template location for this application only
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
