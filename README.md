@@ -92,8 +92,10 @@ The application will start and run on http://localhost:8080.
             "href": "http://localhost:8080/api/v1/epigrams"
         }
     }
-}
-   ```
+   }
+```
+
+```
 2. **POST** ```/api/v1/epigrams```
    - Submit a new epigram to the database.
 
