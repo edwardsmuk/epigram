@@ -70,7 +70,6 @@ The application will start and run on http://localhost:8080.
    Fetch a random epigram from the database.
    Response example:
    ```json
-   Copy code
    {
    "id": "64c1efab256f4e17a0a576c8",
    "content": "Experience is the name everyone gives to their mistakes.",
