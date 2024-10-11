@@ -71,10 +71,28 @@ The application will start and run on http://localhost:8080.
    Response example:
    ```json
    {
-   "id": "64c1efab256f4e17a0a576c8",
-   "content": "Experience is the name everyone gives to their mistakes.",
-   "author": "Oscar Wilde"
-   }
+    "createdDate": "2024-10-11T07:41:30.858Z",
+    "lastModifiedDate": "2024-10-11T07:41:30.858Z",
+    "createdByUser": "system",
+    "modifiedByUser": "system",
+    "version": 1,
+    "id": "6708d6aa8b90ac038b7c29c2",
+    "content": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "_links": {
+        "self": [
+            {
+                "href": "http://localhost:8080/api/v1/epigrams/6708d6aa8b90ac038b7c29c2"
+            },
+            {
+                "href": "http://localhost:8080/api/v1/epigrams/random/1"
+            }
+        ],
+        "epigrams": {
+            "href": "http://localhost:8080/api/v1/epigrams"
+        }
+    }
+}
    ```
 2. **POST** ```/api/v1/epigrams```
    - Submit a new epigram to the database.
